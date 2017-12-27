@@ -111,5 +111,35 @@ nav li {
   max-height: 4rem;
   max-width: 4rem;
 }
+
 /* Info */
+.info {
+  display: flex;
+  justify-content: center;
+}
+.info-item {
+  width: 35%;
+  padding: 0 2.5%;
+}
+.info-title {
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
 /* Footer */
+
+.footer {
+  background-color: azure;
+  padding: 4rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
+}
