@@ -1,3 +1,5 @@
+/* Universal Styles */
+
 html {
   font-size: 18px;
 }
@@ -25,11 +27,15 @@ a:visited {
 }
 
 /* Navigation bar */
-
+header {
+  display: flex;
+  justify-content: center;
+}
 .header {
   color: white;
   background-color: cadetblue;
   width: 100%;
+  top: 1rem;
   position: fixed;
   z-index: 5;
   display: flex;
@@ -57,7 +63,31 @@ nav ul {
 nav li {
   padding: 1rem 2rem 1rem 0;
 }
+
 /* Banner */
+
+.banner {
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31rem;
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.title {
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+  margin-top: 14rem;
+}
+
 /* Products */
 /* Info */
 /* Footer */
