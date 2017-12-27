@@ -89,5 +89,27 @@ nav li {
 }
 
 /* Products */
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.product img {
+  max-height: 4rem;
+  max-width: 4rem;
+}
 /* Info */
 /* Footer */
