@@ -27,17 +27,18 @@ a:visited {
 }
 
 /* Navigation bar */
+
 header {
   display: flex;
   justify-content: center;
 }
+
 .header {
   color: white;
   background-color: cadetblue;
   width: 100%;
   top: 1rem;
-  position: fixed;
-  z-index: 5;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,6 +65,29 @@ nav li {
   padding: 1rem 2rem 1rem 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+/* Tablet Nav */
+
+@media only screen and (max-width: 760px) {
+  .header {
+    top: 0;
+  }
+}
+
+/* Mobile Nav */
+
+@media only screen and (max-width: 580px) {
+  nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
+
 /* Banner */
 
 .banner {
@@ -86,6 +110,39 @@ nav li {
   padding: 1.5rem 5rem;
   margin-right: -2rem;
   margin-top: 14rem;
+}
+
+/* Tablet Banner */
+
+@media only screen and (max-width: 760px) {
+  .banner {
+    height: 22rem;
+  }
+  .title {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+    margin-top: 8rem;
+  }
+}
+
+/* Mobile Banner */
+
+@media only screen and (max-width: 580px) {
+  .banner {
+    height: 17rem;
+  }
+  .banner .container {
+    justify-content: center;
+  }
+  .title {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 12rem 0 0 0;
+  }
 }
 
 /* Products */
@@ -112,15 +169,38 @@ nav li {
   max-width: 4rem;
 }
 
+/* Mobile Products */
+
+@media only screen and (max-width: 580px) {
+  .products {
+    padding: 3.77rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .product {
+    font-size: 0.77rem;
+    height: auto;
+    padding: 0.72rem;
+  }
+  .product span {
+    padding: 0.72rem;
+  }
+}
+
 /* Info */
+
 .info {
   display: flex;
   justify-content: center;
 }
+
 .info-item {
   width: 35%;
   padding: 0 2.5%;
 }
+
 .info-title {
   color: white;
   background-color: cadetblue;
@@ -128,6 +208,29 @@ nav li {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
+
+/* Mobile Info */
+
+@media only screen and (max-width: 580px) {
+  .info {
+    align-items: center;
+    flex-direction: column;
+  }
+  .info-item {
+    width: auto;
+    padding: 0;
+
+  }
+  .info-title {
+    text-align: center;
+    width: auto;
+    padding: 0.5 0;
+  }
+  .info-item p {
+    padding: 0 2.5%
+  }
+}
+
 /* Footer */
 
 .footer {
@@ -142,4 +245,16 @@ nav li {
   height: 1.5rem;
   width: auto;
   padding-right: 1rem;
+}
+
+/* Mobile Footer */
+
+@media only screen and (max-width: 580px) {
+  .footer span {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
 }
